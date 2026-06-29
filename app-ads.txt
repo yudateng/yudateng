@@ -1,0 +1,41 @@
+# app-ads.txt for Beijing Yuda Teng Sports Development Co., Ltd
+# Last Updated: January 1, 2026
+
+# Google AdMob
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+
+# Facebook Audience Network
+facebook.com, PUB-XXXXXXXXXXXXXXXX, DIRECT
+
+# Unity Ads
+unity3d.com, PUB-XXXXXXXXXXXXXXXX, DIRECT
+
+# AppLovin
+applovin.com, PUB-XXXXXXXXXXXXXXXX, DIRECT
+
+# ironSource
+ironsrc.com, PUB-XXXXXXXXXXXXXXXX, DIRECT
+
+# MoPub
+mopub.com, PUB-XXXXXXXXXXXXXXXX, DIRECT
+
+# AdColony
+adcolony.com, PUB-XXXXXXXXXXXXXXXX, DIRECT
+
+# Vungle
+vungle.com, PUB-XXXXXXXXXXXXXXXX, DIRECT
+
+# Chartboost
+chartboost.com, PUB-XXXXXXXXXXXXXXXX, DIRECT
+
+# Google Ad Manager
+google.com, PUB-XXXXXXXXXXXXXXXX, DIRECT
+
+# Mintegral
+mintegral.com, PUB-XXXXXXXXXXXXXXXX, DIRECT
+
+# Pangle
+pangle.io, PUB-XXXXXXXXXXXXXXXX, DIRECT
+
+# Other ad networks
+# Additional ad network entries can be added here as needed

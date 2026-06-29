@@ -1,0 +1,684 @@
+/* =====================================================
+   Beijing Yuda Teng Sports Development Co., Ltd
+   Responsive Stylesheet
+   ===================================================== */
+
+/* Large Desktop */
+@media (max-width: 1399px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .hero-content {
+        max-width: 800px;
+    }
+    
+    .stats {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-lg);
+    }
+    
+    .stat-number {
+        font-size: 3rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: var(--space-2xl);
+    }
+}
+
+/* Desktop */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .app-showcase {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+    
+    .app-preview {
+        order: -1;
+    }
+    
+    .app-preview-frame {
+        max-width: 350px;
+    }
+    
+    .culture-values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        justify-content: flex-start !important;
+        margin-left: 60px !important;
+        padding-left: var(--space-xl);
+    }
+    
+    .timeline-item::before {
+        left: 22px !important;
+        right: auto !important;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-2xl);
+    }
+    
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ad-platforms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet Landscape */
+@media (max-width: 991px) {
+    :root {
+        --space-4xl: 4rem;
+        --space-3xl: 3rem;
+    }
+    
+    h1 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+    }
+    
+    h2 {
+        font-size: clamp(1.75rem, 3vw, 2.5rem);
+    }
+    
+    .navbar-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background: var(--color-primary);
+        flex-direction: column;
+        justify-content: center;
+        padding: var(--space-2xl);
+        transition: var(--transition-normal);
+        box-shadow: var(--shadow-xl);
+    }
+    
+    .navbar-menu.active {
+        right: 0;
+    }
+    
+    .navbar-menu a {
+        font-size: 1.25rem;
+        padding: var(--space-md) 0;
+    }
+    
+    .navbar-toggle {
+        display: flex;
+        z-index: 1001;
+    }
+    
+    .mobile-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition-normal);
+        z-index: 999;
+    }
+    
+    .mobile-menu-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .hero {
+        min-height: 100vh;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-item:nth-child(2)::after {
+        display: none;
+    }
+    
+    .section-header .subtitle::before,
+    .section-header .subtitle::after {
+        width: 20px;
+    }
+    
+    .page-header {
+        padding: 150px 0 80px;
+    }
+}
+
+/* Tablet Portrait */
+@media (max-width: 767px) {
+    :root {
+        --space-4xl: 3rem;
+        --space-3xl: 2.5rem;
+        --space-2xl: 2rem;
+    }
+    
+    .container {
+        padding: 0 var(--space-md);
+    }
+    
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .culture-values {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .value-item {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .news-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-brand {
+        justify-content: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .contact-info {
+        padding: var(--space-xl);
+    }
+    
+    .contact-form {
+        padding: var(--space-xl);
+    }
+    
+    .app-buttons {
+        flex-direction: column;
+    }
+    
+    .app-button {
+        justify-content: center;
+    }
+    
+    .app-preview-frame {
+        max-width: 300px;
+    }
+    
+    .ad-platforms-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ad-formats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .compliance-badges {
+        justify-content: center;
+    }
+    
+    .table-container {
+        font-size: 0.875rem;
+    }
+    
+    th, td {
+        padding: var(--space-sm);
+    }
+    
+    .legal-content {
+        padding: var(--space-2xl) var(--space-md);
+    }
+    
+    .legal-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .legal-content h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 575px) {
+    :root {
+        --space-4xl: 2.5rem;
+        --space-3xl: 2rem;
+        --space-2xl: 1.5rem;
+        --space-xl: 1rem;
+    }
+    
+    .navbar-brand svg {
+        height: 40px;
+    }
+    
+    .navbar-brand-text {
+        font-size: 1rem;
+    }
+    
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: var(--space-xs) var(--space-md);
+    }
+    
+    .hero h1 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: var(--space-sm) var(--space-lg);
+        font-size: 0.875rem;
+    }
+    
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+    
+    .stat-item {
+        padding: var(--space-md);
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    .card {
+        padding: var(--space-lg);
+    }
+    
+    .service-card {
+        padding: var(--space-xl);
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .service-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .news-image {
+        height: 160px;
+    }
+    
+    .news-content {
+        padding: var(--space-md);
+    }
+    
+    .news-title {
+        font-size: 1rem;
+    }
+    
+    .timeline-content {
+        padding: var(--space-md);
+        margin: 0 var(--space-md);
+    }
+    
+    .timeline-year {
+        font-size: 1.25rem;
+    }
+    
+    .timeline-title {
+        font-size: 1rem;
+    }
+    
+    .page-header {
+        padding: 130px 0 60px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: var(--space-sm);
+    }
+    
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 375px) {
+    .navbar-brand-text {
+        display: none;
+    }
+    
+    .hero-content {
+        padding: 0 var(--space-sm);
+    }
+    
+    .stats {
+        gap: var(--space-sm);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .section-header .subtitle::before,
+    .section-header .subtitle::after {
+        display: none;
+    }
+    
+    .footer-brand svg {
+        height: 50px;
+    }
+    
+    .app-preview-frame {
+        max-width: 260px;
+        padding: 15px;
+    }
+    
+    .app-preview-screen {
+        border-radius: 20px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .back-to-top,
+    .hero-scroll,
+    .loading-screen {
+        display: none !important;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: var(--space-2xl) 0;
+    }
+    
+    .section {
+        padding: var(--space-xl) 0;
+    }
+    
+    .card,
+    .service-card,
+    .news-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid var(--color-gray-300);
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    .footer {
+        background: var(--color-gray-100);
+        color: var(--color-gray-900);
+    }
+}
+
+/* Accessibility - Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    [data-animate] {
+        opacity: 1;
+        transform: none;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --color-accent: #ffd700;
+        --color-gray-300: #cccccc;
+        --color-gray-600: #666666;
+    }
+    
+    .card,
+    .service-card,
+    .news-card {
+        border: 2px solid var(--color-gray-800);
+    }
+    
+    .btn {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Dark Mode Support (if system prefers) */
+@media (prefers-color-scheme: dark) {
+    /* Can be customized based on requirements */
+}
+
+/* Orientation Changes */
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero {
+        min-height: auto;
+        padding: var(--space-3xl) 0;
+    }
+    
+    .hero-scroll {
+        display: none;
+    }
+    
+    .page-header {
+        padding: 100px 0 40px;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn:hover {
+        transform: none;
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+    
+    .service-card:hover {
+        transform: none;
+    }
+    
+    .navbar-menu a:hover::after {
+        width: 0;
+    }
+    
+    .navbar-menu a:hover {
+        color: var(--color-accent);
+    }
+}
+
+/* Large Touch Targets */
+@media (pointer: coarse) {
+    .navbar-toggle {
+        padding: 15px;
+    }
+    
+    .btn {
+        min-height: 48px;
+        min-width: 48px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        min-height: 48px;
+    }
+    
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .service-icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Focus Visible for Keyboard Navigation */
+:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-accent);
+    color: var(--color-white);
+    padding: var(--space-sm) var(--space-md);
+    z-index: 10000;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Screen Reader Only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Cursor Styles */
+@media (hover: hover) {
+    a[href],
+    button,
+    [role="button"] {
+        cursor: pointer;
+    }
+}
+
+/* Smooth Scroll Lock for Animations */
+.scroll-locked {
+    overflow: hidden;
+}
+
+/* Firefox Specific */
+@-moz-document url-prefix() {
+    .hero-background::before {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+/* Safari Specific */
+@supports (-webkit-touch-callout: none) {
+    .hero-background {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+/* IE11 Fallbacks */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .grid {
+        display: -ms-grid;
+    }
+    
+    [data-animate] {
+        opacity: 1;
+        transform: none;
+    }
+}
